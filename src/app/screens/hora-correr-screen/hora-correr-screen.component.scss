@@ -1,0 +1,243 @@
+.wrapper {
+    width: 100%;
+    height: 100vh;
+    background-color: #FFFFFF;
+}
+
+.body-home {
+    width: 100%;
+    height: 90vh;
+    background-color: #FFFFFF;
+    overflow-y: scroll!important;
+    //overflow-x: hidden!important;
+}
+
+.section-image {
+    border-top: 1px solid #7A7A7A1F!important;
+    //border-bottom: 1px solid #7A7A7A1F!important;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+
+.header-img {
+    width: 360px;
+    height: 174px;
+}
+
+.eslogan {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    // max-width: 40%;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.interior-normal {
+    max-width: 40%;
+}
+
+.interior-mobile {
+    width: 100%;
+}
+
+.line-color {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 5%;
+}
+
+.vertical-line {
+    width: 5px; /* Line width */
+    background-color: #CD0000; /* Line color */
+    height: 40px!important; /* Override in-line if you want specific height. */
+    float: left;
+}
+
+.title-link {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 90%;
+    //Fuente
+    text-align: left;
+    font-family: Avenir-Bold;
+    font-size: 30px;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    color: #000000;
+    opacity: 1;
+}
+
+.text-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+
+.txt-normal {
+    text-align: center;
+    font-family: Avenir-Bold;
+    font-size: 18px;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+}
+
+.txt-1 {
+    /* Layout Properties */
+    top: 200px;
+    left: 16px;
+    width: 328px;
+    height: 16px;
+    /* UI Properties */
+    color: var(--texto);
+    text-align: left;
+    font: normal normal bold 16px/24px Avenir Next LT Pro;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+}
+
+.txt-2 {
+    text-align: center;
+    font-family: Avenir-Bold;
+    font-size: 14px;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+    /* Layout Properties */
+    padding-top: 30px;
+    left: 16px;
+    width: 328px;
+    height: 112px;
+}
+
+.txt-parrafo {
+    /* UI Properties */
+    color: var(--texto);
+    text-align: left;
+    font-family: Avenir;
+    letter-spacing: 0px;
+    line-height: 70%;
+    color: #000000;
+    opacity: 1;
+}
+
+.txt-3 {
+    /* Layout Properties */
+    padding-top: 50px;
+    left: 16px;
+    width: 328px;
+    height: 16px;
+    /* UI Properties */
+    color: var(--texto);
+    text-align: left;
+    font: normal normal bold 16px/24px Avenir Next LT Pro;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+}
+
+.table-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    padding-top: 50px;
+}
+
+.table-head {
+    text-align: center;
+    font-family: Avenir-Bold;
+    font-size: 18px;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+
+    .title-1 {
+        text-align: left;
+    }
+}
+
+.text-info-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+
+.txt-4 {
+    /* Layout Properties */
+    padding-top: 50px;
+    left: 16px;
+    width: 328px;
+    height: 16px;
+    /* UI Properties */
+    color: var(--texto);
+    text-align: left;
+    font: normal normal bold 16px/24px Avenir Next LT Pro;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+}
+
+.txt-5 {
+    text-align: center;
+    font-family: Avenir-Bold;
+    font-size: 14px;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+    /* Layout Properties */
+    padding-top: 50px;
+    left: 16px;
+    width: 328px;
+    height: 112px;
+}
+
+.button-jugar {
+    padding-top: 170px;
+    padding-bottom: 40px;
+    color: #CD0000
+}
+
+//Button
+.mat-flat-button {
+    background: #CD0000 0% 0% no-repeat padding-box;
+    opacity: 1;
+    width: 188px;
+    height: 40px;
+    border-radius: 0;
+    //Fuente
+    .text-btn {
+        text-align: center;
+        font-family: Avenir;
+        font-size: 16px;
+        letter-spacing: 0.8px;
+        color: #FFFFFF;
+        opacity: 1;
+    }
+}
+
+.icon-play {
+    color: #CD0000;
+}
+
+.mat-flat-button.mat-primary.mat-button-disabled, .mat-flat-button.mat-accent.mat-button-disabled, .mat-flat-button.mat-warn.mat-button-disabled, .mat-flat-button.mat-button-disabled.mat-button-disabled, .mat-raised-button.mat-primary.mat-button-disabled, .mat-raised-button.mat-accent.mat-button-disabled, .mat-raised-button.mat-warn.mat-button-disabled, .mat-raised-button.mat-button-disabled.mat-button-disabled, .mat-fab.mat-primary.mat-button-disabled, .mat-fab.mat-accent.mat-button-disabled, .mat-fab.mat-warn.mat-button-disabled, .mat-fab.mat-button-disabled.mat-button-disabled, .mat-mini-fab.mat-primary.mat-button-disabled, .mat-mini-fab.mat-accent.mat-button-disabled, .mat-mini-fab.mat-warn.mat-button-disabled, .mat-mini-fab.mat-button-disabled.mat-button-disabled {
+    background: #CD0000 0% 0% no-repeat padding-box;
+}

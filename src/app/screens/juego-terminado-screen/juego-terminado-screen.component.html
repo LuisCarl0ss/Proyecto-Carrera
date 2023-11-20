@@ -1,0 +1,48 @@
+<section class="juego-puntaje">
+    <div class="wrapper">
+        <mat-drawer-container>
+            <mat-drawer #drawer mode='over' position="start">
+                <app-left-sidebar (cerrar)="drawer.toggle()"></app-left-sidebar>
+            </mat-drawer>
+            <app-header-app (drawer)="drawer.toggle()"></app-header-app>
+            <!-- Sección del body donde se muestra todo el contenido -->
+            <div class="body-home">
+                <div class="section-image">
+                    <div class="eslogan {{isMobile()}}">
+                        <div class="line-color">
+                            <div class="vertical-line" style="height: 111px;"></div>
+                        </div>
+                        <div class="title-link">
+                            <span>¡Excelente carrera!</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="rectangulo-wrapper">
+                    <div class="rectangulo"></div>
+                </div>
+                <div class="section-bases">
+                    <div class="num-bases">
+                            <span class="txt-normal-1">Obtuviste</span>
+                            <span class="txt-normal-2">1400</span>
+                            <span class="txt-normal-3">puntos</span>
+                    </div>
+                </div>
+                <div class="description">
+                    <div class="text-description">
+                        <p class="descrip1">Gracias por participar, acumula mas puntos y<br></p>
+                        <p class="descrip2">gana una increible <b>Ducati Scrambler</b></p>
+                    </div>
+                </div>
+                <div class="d-flex flex-direction-row justify-content-center w-100 mt-3 mb-3">
+                    <button mat-flat-button color="warn" class="btn-irInicio" (click)="irHome()" [disabled]="isLoading">
+                        <span class="text-btn" *ngIf="!isLoading">Ir al inicio</span>
+                    </button>
+                </div>  
+                <div class="footer">
+                    <app-footer-app></app-footer-app> 
+                </div>              
+            </div>
+        </mat-drawer-container>
+        <!--Se cierra el sidebar-->
+    </div>
+</section>

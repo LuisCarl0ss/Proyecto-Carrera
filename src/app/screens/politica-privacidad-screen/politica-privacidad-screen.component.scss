@@ -1,0 +1,107 @@
+.wrapper {
+    width: 100%;
+    height: 100vh;
+    background-color: #FFFFFF;
+}
+
+.body-privacidad {
+    width: 100%;
+    height: 90vh;
+    background-color: #FFFFFF;
+    overflow-y: scroll!important;
+    //overflow-x: hidden!important;
+}
+
+.section-image {
+    border-top: 1px solid #7A7A7A1F!important;
+    //border-bottom: 1px solid #7A7A7A1F!important;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.eslogan {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    // max-width: 40%;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.line-color {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 5%;
+}
+
+.vertical-line {
+    width: 5px; /* Line width */
+    background-color: #CD0000; /* Line color */
+    height: 40px!important; /* Override in-line if you want specific height. */
+    float: left;
+}
+
+.title-link {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    //justify-content: center;
+    width: 90%;
+    //Fuente
+    text-align: left;
+    font-family: Avenir-Bold;
+    font-size: 20px;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    color: #000000;
+    opacity: 1;
+}
+
+.text-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+
+
+.wrapper-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    font-family: Avenir;
+    font-size: 14px;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+    /* Layout Properties */
+    padding-top: 30px;
+    left: 16px;
+    width: 328px;
+    height: 112px;
+}
+
+.txt-parrafos {
+    /* UI Properties */
+    color: var(--texto);
+    text-align: left;
+    font-family: Avenir;
+    letter-spacing: 0px;
+    //line-height: 70%;
+    color: #000000;
+    opacity: 1;
+}

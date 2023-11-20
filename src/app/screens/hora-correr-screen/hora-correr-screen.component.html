@@ -1,0 +1,108 @@
+<section class="bases-promocion">
+    <div class="wrapper">
+        <mat-drawer-container>
+            <mat-drawer #drawer mode='over' position="start">
+                <app-left-sidebar (cerrar)="drawer.toggle()"></app-left-sidebar>
+            </mat-drawer>
+            <app-header-app (drawer)="drawer.toggle()"></app-header-app>
+            <!-- Sección del body donde se muestra todo el contenido -->
+            <div class="body-home">
+                <div class="section-image">
+                    <div class="eslogan {{isMobile()}}">
+                        <div class="line-color">
+                            <div class="vertical-line" style="height: 111px;"></div>
+                        </div>
+                        <div class="title-link">
+                            <span>¡Hora de correr!</span>
+                        </div>
+                    </div>
+                </div>
+                <section class="text-info">
+                    <div class="txt-1">
+                        <span class="txt-normal">Objetivo</span>
+                    </div>
+                    <div class="txt-2">
+                        <div class="txt-parrafo">
+                            <p>Estas a punto de jugar Moto Rider, el juego<br></p>
+                            <p>consiste en conducir una motocicleta a<br></p>
+                            <p>través de un camino con autos, tu misión es<br></p>
+                            <p>esquivarlos durante 120 segundos mientras<br></p>
+                            <p>la velocidad va aumentando.</p>
+                        </div>
+                    </div>
+                    <div class="txt-3">
+                        <span class="txt-normal">Puntuacion</span>
+                    </div>
+                </section>
+                <div class="table-wrapper">
+                    <table>
+                        <thead class="table-head">
+                            <tr>
+                                <th class="title-1">Acción</th>
+                                <th class="title-2">Puntos</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Código redimido</td>
+                                <td>1000</td>
+                                <hr>
+                            </tr>
+                            <tr>
+                                <td>Jugar sin chocar de 0 a 30 seg</td>
+                                <td>100</td>
+                                <hr>
+                            </tr>
+                            <tr>
+                                <td>Jugar sin chocar de 31 a 60 seg</td>
+                                <td>200</td>
+                                <hr>
+                            </tr>
+                            <tr>
+                                <td>Jugar sin chocar de 61 a 90 seg</td>
+                                <td>300</td>
+                                <hr>
+                            </tr>
+                            <tr>
+                                <td>Jugar sin chocar de 91 a 120 seg</td>
+                                <td>400</td>
+                                <hr>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <section class="text-info-2">
+                    <div class="txt-4">
+                        <span class="txt-normal">Información adicional</span>
+                    </div>
+                    <div class="txt-5">
+                        <div class="txt-parrafo">
+                            <p>Tienes dos opprtunidades por cada código<br></p>
+                            <p>que redimimas.<br></p>
+                            <br>
+                            <p>La 1ra oportunidad es entrenamiento y no<br></p>
+                            <p>genera puntos.<br></p>
+                            <br>
+                            <p>La 2da oportunidad genera puntos, el juego<br></p>
+                            <p>termina si chocas o se termina el tiempo.<br></p>
+                            <br>
+                            <p>Verifica que tu conexión a Internet sea<br></p>
+                            <p>estable al momento de jugar</p>
+                        </div>
+                    </div>
+                </section>
+                <div class="button-jugar">
+                    <div class="d-flex flex-direction-row justify-content-center w-100 mt-3 mb-3">
+                        <button mat-flat-button color="warn" class="btn-jugar" (click)="irJuego()" [disabled]="isLoading">
+                            <span class="text-btn" *ngIf="!isLoading">Jugar ahora</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="footer">
+                    <app-footer-app></app-footer-app> 
+                </div>
+            </div>
+        </mat-drawer-container>
+        <!--Se cierra el sidebar-->
+    </div>
+</section>
